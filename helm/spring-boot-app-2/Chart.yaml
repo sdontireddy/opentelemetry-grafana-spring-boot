@@ -1,0 +1,5 @@
+apiVersion: v2
+name: spring-boot-app-2
+version: 1.0.2-SNAPSHOT
+description: Chart for applications based on Spring (Boot)
+type: application
