@@ -8,7 +8,7 @@ ADD . /build
 RUN cd /build && mvn package --quiet
 
 FROM eclipse-temurin:17
-# Healthcheck is done by Kubernetes probes
+# Healthcheck is done by Kubernetes probes 
 HEALTHCHECK NONE
 COPY --from=build /build/target/*.jar /app.jar
 COPY --from=download /home/curl_user/opentelemetry-javaagent.jar /opentelemetry-javaagent.jar
