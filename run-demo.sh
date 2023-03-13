@@ -46,6 +46,6 @@ kubectl wait --for=condition=ready --timeout=5m pod -n kube-prometheus-stack -l 
 echo ">>>> Setting up port-forward (end with Ctrl-C), you can login to Grafana now at http://localhost:3000"
 kubectl port-forward -n kube-prometheus-stack deployment/kube-prometheus-stack-grafana 3000:3000
 
-# setup port forward for Spring Boot App
+# setup port forward for Spring Boot App 
 echo ">>>> Setting up port-forward (end with Ctrl-C), you can login to Grafana now at http://localhost:8080"
 kubectl port-forward  deployment/spring-boot-demo-app1 8080:8080
